@@ -38,11 +38,6 @@ It is designed for role-based collaboration between admins, recruiters, hiring m
 - lucide-react
 - class-variance-authority + clsx + tailwind-merge
 
-### UI Library Clarification
-
-This project does not use Aceternity UI as a package.
-The UI is built using Tailwind CSS and local reusable UI primitives under frontend/src/components/ui.
-
 ## Architecture Overview
 
 ```mermaid
@@ -174,11 +169,6 @@ The final decision model is simplified to:
 - selected
 - rejected
 
-## Additional Documentation
-
-- PROJECT_BACKGROUND_AND_IMPLEMENTATION_GUIDE.md
-- VIVA_QUESTIONS_AND_ANSWERS_SIMPLE.md
-- frontend/README.md (frontend-specific Vite notes)
 
 ## License
 
