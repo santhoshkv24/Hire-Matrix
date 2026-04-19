@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-border-subtle: rgba(17, 32, 61, 0.07);
+  --color-surface-hover: rgba(15, 95, 215, 0.04);
+  --color-primary-main: #0f5fd7;
+  --color-primary-hover: #0d52b9;
+  --color-primary-light: #4f8df0;
+}
+
+:root {
+  font-family: 'Manrope', sans-serif;
+  color: #11203d;
+  background: #eef3f8;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Spacing tokens */
+  --section-gap: 24px;
+  --card-padding: 24px;
+  --field-gap: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Page-level fade-in */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-enter {
+  animation: fadeUp 0.25s ease forwards;
+}
+
+/* Section divider style */
+.section-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #4f6384;
+  margin-bottom: 16px;
+}

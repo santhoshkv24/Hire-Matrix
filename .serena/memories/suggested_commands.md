@@ -1,0 +1,11 @@
+# Suggested commands
+- Backend install: `cd backend && npm install`
+- Backend dev server: `cd backend && npm run dev`
+- Backend prod server: `cd backend && npm start`
+- Backend tests: `cd backend && npm run test` (placeholder)
+- Frontend install: `cd frontend && npm install`
+- Frontend dev server: `cd frontend && npm run dev`
+- Frontend build: `cd frontend && npm run build`
+- Frontend lint: `cd frontend && npm run lint`
+- Frontend preview: `cd frontend && npm run preview`
+- Common git helpers: `git status`, `git diff`, `git log`
