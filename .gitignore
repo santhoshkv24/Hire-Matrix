@@ -54,5 +54,4 @@ Thumbs.db
 !.vscode/extensions.json
 
 # Serena local artifacts
-.serena/cache/
-.serena/project.local.yml
+.serena/

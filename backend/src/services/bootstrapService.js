@@ -36,15 +36,6 @@ const ensureRoles = async () => {
   for (const role of ROLE_SEED) {
     await Role.updateOne({ key: role.key }, { $set: role }, { upsert: true });
   }
-
-  const legacyHrRole = await Role.findOne({ key: "hr_manager" }).select("_id");
-  if (legacyHrRole) {
-    await User.updateMany(
-      { roles: legacyHrRole._id },
-      { $pull: { roles: legacyHrRole._id } }
-    );
-    await Role.deleteOne({ _id: legacyHrRole._id });
-  }
 };
 
 const ensureDefaultAdmin = async () => {
